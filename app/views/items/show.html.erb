@@ -1,19 +1,16 @@
 <div class="container">
   <div class="row">
-
-  <div class="col-md-6">
-    <%= image_tag "dunwell.jpg", class: "img-responsive" %>
+    <div class="col-md-5">
+      <%= image_tag "dunwell.jpg", class: "img-responsive" %>
+    </div>
+    <div class="col-md-7">
+      <div class="col-md-6">
+        <h3><%= @item.name %> by <%= @item.creator %></h3>
+        <p class="justify"><%= @item.description %></p>
+        <h4 class="text-left">$<%= @item.price %></h4>
+        <%= link_to "Edit", edit_item_path(@item)  %>
+        <%= link_to "Back", item_path  %>
+      </div>
+    </div>
   </div>
-
-  <div class="col-md-6">
-    <div class="col-md-6">
-    <h3><%= @item.name %> by <%= @item.creator %></h3>
-    <p class="justify"><%= @item.description %></p>
-    <h4 class="text-left">$<%= @item.price %></h4>
-  </div>
-  </div>
-
-  </div>
-  <%= link_to "Edit", edit_item_path(@item)  %>
-<%= link_to "Back", item_path  %>
 </div>
