@@ -1,3 +1,31 @@
 // Place all the styles related to the items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.form-item {
+  max-width: 600px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-item .form-item-heading,
+.form-item .checkbox {
+  margin-bottom: 10px;
+}
+.form-item .checkbox {
+  font-weight: normal;
+}
+.form-item .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-item .form-control:focus {
+  z-index: 2;
+}
+.form-item input {
+  margin-bottom: 10px;
+}
