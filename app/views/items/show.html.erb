@@ -1,29 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
 
-<p>
-  <strong>Name:</strong>
-  <%= @item.name %>
-</p>
+  <div class="col-md-6">
+    <%= image_tag "dunwell.jpg", class: "img-responsive" %>
+  </div>
 
-<p>
-  <strong>Creator:</strong>
-  <%= @item.creator %>
-</p>
+  <div class="col-md-6">
+    <div class="col-md-6">
+    <h3><%= @item.name %> by <%= @item.creator %></h3>
+    <p class="justify"><%= @item.description %></p>
+    <h4 class="text-left">$<%= @item.price %></h4>
+  </div>
+  </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @item.description %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @item.price %>
-</p>
-
-<p>
-  <strong>Availability:</strong>
-  <%= @item.availability %>
-</p>
-
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+  </div>
+  <%= link_to "Edit", edit_item_path(@item)  %>
+<%= link_to "Back", item_path  %>
+</div>
