@@ -27,8 +27,7 @@ gem 'spring',        group: :development
 
 # Use unicorn as the app server
 # gem 'unicorn'
-
-# Use Capistrano for deployment
+gem 'pry'
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
@@ -39,8 +38,9 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 gem 'simple_form'
 gem "devise"
 gem 'cancan'
-gem 'paperclip'
+gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'dotenv-rails', group: :development
+gem 'aws-sdk'
 
 group :production do
   gem 'rails_12factor'
