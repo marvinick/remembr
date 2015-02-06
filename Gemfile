@@ -40,6 +40,7 @@ gem 'simple_form'
 gem "devise"
 gem 'cancan'
 gem 'paperclip'
+gem 'dotenv-rails', group: :development
 
 group :production do
   gem 'rails_12factor'
