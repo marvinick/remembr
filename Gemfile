@@ -39,9 +39,10 @@ gem 'simple_form'
 gem "devise"
 gem 'cancan'
 gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
-gem 'dotenv-rails', group: :development
-gem 'aws-sdk'
+gem 'aws-sdk', '~> 1.5.7'
 
 group :production do
   gem 'rails_12factor'
 end
+
+gem 'dotenv-rails', group: :development
