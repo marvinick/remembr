@@ -3,8 +3,9 @@ class PagesController < ApplicationController
 
   def index
     if current_user
-      redirect_to books_path
+      redirect_to items_path
     end
+    @items = Item.last(4)
   end
 
   def dashboard

@@ -6,6 +6,7 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.where(availability: true)
+    @items = Item.last(4)
   end
 
   def show
