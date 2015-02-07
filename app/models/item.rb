@@ -11,4 +11,6 @@ class Item < ActiveRecord::Base
   content_type: ['application/pdf'],
   message: "Only pdfs allowed"
 
+  extend FriendlyId
+  friendly_id :name, use: :slugged
 end

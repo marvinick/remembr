@@ -40,6 +40,8 @@ gem "devise"
 gem 'cancan'
 gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'aws-sdk', '~> 1.5.7'
+gem 'friendly_id'
+
 
 group :production do
   gem 'rails_12factor'
