@@ -41,7 +41,7 @@ gem 'cancan'
 gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'aws-sdk', '~> 1.5.7'
 gem 'friendly_id'
-
+gem 'stripe'
 
 group :production do
   gem 'rails_12factor'
