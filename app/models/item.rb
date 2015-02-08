@@ -1,4 +1,7 @@
 class Item < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :name, use: :slugged
+
   belongs_to :user
   has_attached_file :image
   has_attached_file :resource
@@ -10,7 +13,4 @@ class Item < ActiveRecord::Base
   validates_attachment_content_type :resource,
   content_type: ['application/pdf'],
   message: "Only pdfs allowed"
-
-  extend FriendlyId
-  friendly_id :name, use: :slugged
 end
