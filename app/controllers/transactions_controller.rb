@@ -8,8 +8,8 @@ class TransactionsController < ApplicationController
         amount: membership.price,
         currency: "usd",
         card: token,
-        description: current_user.email)
-        )
+        description: current_user.email
+      )
 
     @membership = Membership.create!(member_email: current_user.email)
     redirect_to root_path
