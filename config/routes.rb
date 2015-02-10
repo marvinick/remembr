@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :items
-
+  resources :memberships
   devise_for :users
   root to: "items#index"
   get 'dashboard' => "pages#dashboard"
