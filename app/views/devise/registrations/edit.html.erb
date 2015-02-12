@@ -16,9 +16,7 @@
     <%= f.button :submit, "Update", class: "btn btn-primary btn-block" %>
 <% end %>
 
-<h3>Cancel my account</h3>
-
-<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+<h4><%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></h4>
 
 <%= link_to "Back", :back %>
 </div>
