@@ -13,4 +13,7 @@ class Item < ActiveRecord::Base
   validates_attachment_content_type :resource,
   content_type: ['application/pdf'],
   message: "Only pdfs allowed"
+
+  validates :image, attachment_presence: true
+  validates :resource, attachment_presence: true
 end
