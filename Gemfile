@@ -11,14 +11,16 @@ gem 'jbuilder', '~> 2.0'
 gem 'pry'
 gem "font-awesome-rails"
 gem 'pg'
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'twitter-bootstrap-rails'
 gem 'simple_form'
 gem "devise"
 gem 'cancan'
-gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'paperclip'
 gem 'aws-sdk', '~> 1.5.7'
 gem 'friendly_id'
 gem 'stripe'
+gem 'acts_as_votable'
+
 
 group :production do
   gem 'rails_12factor'

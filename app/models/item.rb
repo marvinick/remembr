@@ -15,5 +15,5 @@ class Item < ActiveRecord::Base
   message: "Only pdfs allowed"
 
   validates :image, attachment_presence: true
-
+  acts_as_votable
 end

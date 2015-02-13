@@ -1,10 +1,11 @@
 class ItemsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
-  before_action :set_item, only: [:show, :edit, :update, :destroy]
+  before_action :set_item, only: [:show, :edit, :update, :destroy, :upvote, :downvote]
 
   respond_to :html
 
   def index
+    @items = Item.all.order(:cached_weighted_score => :desc)
     @items = Item.where(availability: true)
     @items = Item.last(4)
   end
@@ -32,6 +33,16 @@ class ItemsController < ApplicationController
     authorize! :manage, @item
     @item.update(item_params)
     respond_with(@item)
+  end
+
+  def upvote
+    @item.upvote_from current_user, :vote_weight => 3
+    redirect_to items_path
+  end
+
+  def downvote
+    @item.downvote_from current_user
+    redirect_to items_path
   end
 
   def destroy
