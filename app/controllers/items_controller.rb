@@ -7,7 +7,6 @@ class ItemsController < ApplicationController
   def index
     @items = Item.all.order(:cached_weighted_score => :desc)
     @items = Item.where(availability: true)
-    @items = Item.last(4)
   end
 
   def show
