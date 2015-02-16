@@ -14,3 +14,11 @@
  *= require font-awesome
  *= require_self
  */
+
+.thumb-box{
+  height: 400px;
+}
+
+.like:hover {
+  text-decoration: none;
+}
