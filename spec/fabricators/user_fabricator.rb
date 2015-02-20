@@ -1,0 +1,1 @@
+name { Faker::Name.name }
