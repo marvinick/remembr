@@ -2,6 +2,7 @@ class Item < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, use: :slugged
 
+  validates :price, presence: true
   belongs_to :user
   has_attached_file :image
   has_attached_file :resource
