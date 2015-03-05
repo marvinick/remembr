@@ -69,6 +69,7 @@ GEM
       railties (>= 3.2, < 5.0)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
+    gravatarify (3.0.0)
     hike (1.2.3)
     httparty (0.13.3)
       json (~> 1.8)
@@ -216,6 +217,7 @@ DEPENDENCIES
   faker
   font-awesome-rails
   friendly_id
+  gravatarify (~> 3.0.0)
   jbuilder (~> 2.0)
   jquery-rails
   paperclip
