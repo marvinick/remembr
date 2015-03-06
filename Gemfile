@@ -23,6 +23,7 @@ gem 'acts_as_votable'
 gem 'fabrication'
 gem 'faker'
 gem "gravatarify", '~> 3.0.0'
+gem 'aasm'
 
 group :production do
   gem 'rails_12factor'
